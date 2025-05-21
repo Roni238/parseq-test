@@ -1,5 +1,17 @@
-# Vue 3 + TypeScript + Vite
+# Parseq
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Предпросмотр: https://parseq-test-eight.vercel.app/
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Начало работы
+
+```
+$ npm install
+$ npm run dev
+```
+
+Тестовое задание для Parseq Lab 
+* Стек Vue 3, Composition API, и TypeScript
+* Следовал методологии FDS
+* Код структурирован по БЭМ
+* Сделал общий метод для запросов
+* aria атрибуты не расставлял, vue-router не использовал тк они тут не нужны
