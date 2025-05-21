@@ -1,0 +1,55 @@
+@use "@/app/style/_variables" as *;
+
+@mixin tablet {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+  @include tablet {
+    font-size: 18px;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: $main-font;
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  background-color: $bg-color;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  color: $white-color;
+  background-color: #404040;
+  display: block;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+}
+dt {
+  font-weight: 600;
+}
+li {
+  list-style: none;
+}
+.html-no-scroll {
+  overflow: hidden;
+}
+h1 {
+  color: $white-color;
+}
