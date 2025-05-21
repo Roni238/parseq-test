@@ -101,6 +101,9 @@ const editData = reactive({
 const toggleEditMode = () => {
   if (isEditing.value) {
     listStore.setListSettings(editData.name, editData.description);
+  } else {
+    editData.name = listStore.currentList.name;
+    editData.description = listStore.currentList.description;
   }
   isEditing.value = !isEditing.value;
 };
